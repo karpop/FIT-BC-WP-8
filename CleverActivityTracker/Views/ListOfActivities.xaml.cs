@@ -66,7 +66,7 @@ namespace CleverActivityTracker.Views
             switch (send.Name)
             {
                 case "Img_close" :
-                    dbSingleton.deleteActivity((sender as Image).DataContext as Activity);
+                    dbSingleton.deleteActivity(id);
                     break;
                 case "Img_edit" :
                     NavigationService.Navigate(new Uri("/Views/EditOrNewActivity.xaml?id=" + id.ToString(), UriKind.Relative));

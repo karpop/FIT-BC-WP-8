@@ -25,3 +25,4 @@ C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\Cleve
 C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\obj\Debug\XapCacheFile.xml
 C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Bin\Debug\ReorderListBox.dll
 C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\obj\Debug\Views\PivotPage1.g.cs
+C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\obj\Debug\CleverActivityTracker.csprojResolveAssemblyReference.cache

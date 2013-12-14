@@ -9,7 +9,6 @@
 
     <!--Application Resources-->
     <Application.Resources>
-        
         <local:LocalizedStrings xmlns:local="clr-namespace:CleverActivityTracker" x:Key="LocalizedStrings"/>
 
         <converters:BoolToVisibilityConverter x:Key="boolToVisibilityConverter" />

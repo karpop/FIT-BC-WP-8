@@ -11,7 +11,6 @@ using CleverActivityTracker.ViewModels;
 using CleverActivityTracker.Models;
 using System.Windows.Threading;
 using System.Windows.Media.Imaging;
-using System.Collections.ObjectModel;
 
 namespace CleverActivityTracker.Views
 {
@@ -21,8 +20,6 @@ namespace CleverActivityTracker.Views
         public delegate void ValueChangedEventHandler(object sender, EventArgs e);
 
         public event ValueChangedEventHandler ValueChanged;
-
-        
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
@@ -38,7 +35,6 @@ namespace CleverActivityTracker.Views
         }
         //private ViewModelDb db = new ViewModelDb();
 
-        ObservableCollection<Schedule> myProm = ViewModelDbSingleton.Instance.AllScheduleItems;
         public MainPage()
         {
             InitializeComponent();
@@ -53,8 +49,6 @@ namespace CleverActivityTracker.Views
 
             button21.Visibility = System.Windows.Visibility.Collapsed;
             button22.Visibility = System.Windows.Visibility.Collapsed;
-
-
 
             reorderListBox.DataContext = ViewModelDbSingleton.Instance.AllScheduleItems;
             MyCheckboxIndicate.DataContext = pok;
@@ -173,7 +167,7 @@ namespace CleverActivityTracker.Views
             switch (send.Name)
             {
                 case "Img_close" :
-                    ViewModelDbSingleton.Instance.deleteSchedule((sender as Image).DataContext as Schedule);
+                    ViewModelDbSingleton.Instance.deleteSchedule(id);
                     break;
                 case "Img_play":
                     NavigationService.Navigate(new Uri("/Views/PivotPage1.xaml", UriKind.Relative));
@@ -181,6 +175,22 @@ namespace CleverActivityTracker.Views
             }
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {

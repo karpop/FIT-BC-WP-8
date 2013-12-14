@@ -107,8 +107,7 @@
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\Converter.cs" />
-    <Compile Include="ViewModels\ValueConversion.cs" />
-    <Compile Include="ViewModels\DbSingleton.cs" />
+    <Compile Include="ViewModels\ViewModel.cs" />
     <Compile Include="Views\EditOrNewActivity.xaml.cs">
       <DependentUpon>EditOrNewActivity.xaml</DependentUpon>
     </Compile>

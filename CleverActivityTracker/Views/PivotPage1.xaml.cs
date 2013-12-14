@@ -42,13 +42,35 @@ namespace CleverActivityTracker.Views
 
         private void Img_add_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            dbSingleton.CreateSchedule((sender as Image).DataContext as Activity);
-            NavigationService.GoBack();
+            Image send = (Image)sender;
+            foreach (object item in ((Grid)send.Parent).Children)
+            {
+                switch (item.ToString())
+                {
+                    case "System.Windows.Controls.TextBlock" :
+                        switch (((TextBlock)item).Name)
+                        {
+                            case "Name":
+                                break;
+                            case "Id" :
+                                ViewModelDbSingleton.Instance.CreateSchedule(ViewModelDbSingleton.Instance.findActivity(Convert.ToInt32(((TextBlock)item).Text)));
+                                NavigationService.GoBack();
+                                break;
+                        }
+                        break;
+                    case "System.Windows.Controls.Image" :
+                        break;
+                }
+            }
+            
         }
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-            pok.IsEnable = pok.IsEnable ? false : true;
+            if (pok.IsEnable)
+                pok.IsEnable = false;
+            else
+                pok.IsEnable = true;
         }
     }
 }

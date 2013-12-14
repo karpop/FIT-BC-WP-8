@@ -4,7 +4,6 @@ using System.Data.Linq.Mapping;
 
 namespace CleverActivityTracker.Models
 {
-   
     [Table]
     public class Activity : INotifyPropertyBase
     {
@@ -24,7 +23,7 @@ namespace CleverActivityTracker.Models
             set { this.SetProperty(ref this._name, value); }
         }
 
-        
+        // Internal column for the associated
         [Column]
         internal int? _folderId;
 

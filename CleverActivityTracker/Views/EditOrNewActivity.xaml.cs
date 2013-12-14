@@ -22,7 +22,6 @@ namespace CleverActivityTracker.Views
         {
             InitializeComponent();
             DataContext = model;
-
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -32,7 +31,7 @@ namespace CleverActivityTracker.Views
             {
                 model.EnableEdit = false;
                 model.idActivity = Convert.ToInt32(id);
-                model.Activity = db.FindActivity((int)model.idActivity);
+                model.Activity = db.findActivity((int)model.idActivity);
                 //delete.Click -= ApplicationBarIconButton_Click;
                 //delete.Click += ApplicationBarIconButton_Click2;
             }
@@ -59,7 +58,7 @@ namespace CleverActivityTracker.Views
             if (model.idActivity == null)
                 db.CreateActivity(Activity_Name.Text);
             else
-                db.SubmitChangesDb();
+                db.SubmitChanges();
             NavigationService.GoBack();      
         }
 
@@ -70,8 +69,8 @@ namespace CleverActivityTracker.Views
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-            //if(id != null)
-                //ViewModelDbSingleton.Instance.deleteActivity(Convert.ToInt32(id));
+            if(id != null)
+                ViewModelDbSingleton.Instance.deleteActivity(Convert.ToInt32(id));
             NavigationService.GoBack();  
         }
 

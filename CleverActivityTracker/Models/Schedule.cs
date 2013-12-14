@@ -20,9 +20,9 @@ namespace CleverActivityTracker.Models
             set { this.SetProperty(ref this._id, value); }
         }
 
-        private int _order;
+        private int? _order;
         [Column]
-        public int Order
+        public int? Order
         {
             get { return _order; }
             set { this.SetProperty(ref this._order, value); }
