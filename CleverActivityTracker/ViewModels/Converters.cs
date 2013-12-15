@@ -13,7 +13,7 @@ namespace CleverActivityTracker.ViewModels
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             bool boolValue = (bool)value;
-            bool boolParameter = parameter != null ? bool.Parse((string)parameter) : false;
+            bool boolParameter = parameter != null ? bool.Parse(parameter as string) : false;
 
             if (boolParameter) 
                 return boolValue ? Visibility.Collapsed : Visibility.Visible;

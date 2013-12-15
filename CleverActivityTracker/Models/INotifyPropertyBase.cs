@@ -13,9 +13,18 @@ namespace CleverActivityTracker.Models
         {
             if (object.Equals(storage, value))
                 return false;
-            this.OnPropertyChanging(propertyName);
+            OnPropertyChanging(propertyName);
             storage = value;
-            this.OnPropertyChanged(propertyName);
+            OnPropertyChanged(propertyName);
+            return true;
+        }
+
+        protected bool SetPropertyChanged<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+        {
+            if (object.Equals(storage, value))
+                return false;
+            storage = value;
+            OnPropertyChanged(propertyName);
             return true;
         }
 
@@ -32,6 +41,5 @@ namespace CleverActivityTracker.Models
             if (eventHandler != null)
                 eventHandler(this, new PropertyChangingEventArgs(propertyName));
         }
-
     }
 }

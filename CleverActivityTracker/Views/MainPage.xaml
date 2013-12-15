@@ -16,91 +16,16 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <CheckBox x:Name="MyCheckboxIndicate" Height="0" Width="0" Visibility="{Binding IsEnable, 
-                                                         Converter={StaticResource boolToVisibilityConverter}, 
-                                                         ConverterParameter=True}" />
         <!--Pivot Control-->
-        <phone:Pivot Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" SelectionChanged="PivotItem_SelectionChanged">
+        <phone:Pivot Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" >
             <!--Pivot item one-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPage_PivotItem1Title, Source={StaticResource LocalizedStrings}}">
-                <StackPanel >
-                    <StackPanel Name="runAct" Visibility="Collapsed">
-                        <StackPanel>
-                            <TextBlock Text="Spuštěná aktivita:" FontSize="24" />
-                            <TextBlock Text="Příprava na BC konzultaci" Margin="24,0,0,0" Foreground="{StaticResource PhoneAccentBrush}" FontSize="24"/>
-                        </StackPanel>
-                        <StackPanel>
-                            <TextBlock Name="clock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="456" Opacity="0.98" TextAlignment="Center" Margin="0,10,0,6" FontSize="36" />
-                            <Image Name="button" Source="/IMg/transport.play.png" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-80,0,0,0"/>
-                            <Image Source="/IMg/basecircle.png" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-80,-80,0,0" Tap="button1_Click"/>
-                            <Image Name="button21" Source="/IMg/transport.pause.png" Width="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="+60,-60,0,0"/>
-                            <Image Name="button22" Source="/IMg/basecircle.png" Width="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="+60,-60,0,0" Tap="button2_Click"/>
-                        </StackPanel>
-                        <StackPanel>
-                            <CheckBox Name="checkBox" Content="Chci změnit upravovaný čas"/>
-                        </StackPanel>
-                    </StackPanel>
-                    <StackPanel Name="notRun" >
-                        <StackPanel>
-                            <TextBlock Text="Neprobíhá aktivita" FontSize="24" />
-                            <TextBlock Text="Vyhledej v aktivitách (s našeptávačem):" FontSize="18" />
-                            <TextBox Height="72" TextWrapping="Wrap" Width="350" TextChanged="TextBox_TextChanged"/>
-                            <TextBlock Margin="0,24,0,0" FontSize="24" Text="Plán"/>
-                            <StackPanel MaxHeight="200">
-                                <rlb:ReorderListBox 
-                        x:Name="reorderListBox2"
-                        ItemsSource="{Binding}" 
-                        IsReorderEnabled="False">
-                                    <rlb:ReorderListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="1*" />
-                                                    <ColumnDefinition Width="50" />
 
-                                                </Grid.ColumnDefinitions>
-                                                <TextBlock x:Name="Name" Text="{Binding ActivityRef.Name, Mode=TwoWay}" FontFamily="Portable User Interface" />
-                                                <TextBlock x:Name="Id" Text="{Binding ActivityRef.Id, Mode=TwoWay}" FontFamily="Portable User Interface" Visibility="Collapsed"/>
-
-                                                <Image Name="Img_play" Source="/Icon/Dark/transport.play.png" Width="50" Grid.Column="2" Tap="TextBlock_Tap" Visibility="Visible"/>
-                                            </Grid>
-                                        </DataTemplate>
-                                    </rlb:ReorderListBox.ItemTemplate>
-                                </rlb:ReorderListBox>
-                            </StackPanel>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
             </phone:PivotItem>
 
             <!--Pivot item two-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPage_PivotItem2Title, Source={StaticResource LocalizedStrings}}">
-                <StackPanel>
-                        <rlb:ReorderListBox 
-                        x:Name="reorderListBox"
-                        ItemsSource="{Binding}" 
-                        IsReorderEnabled="{Binding 
-                                            ElementName=MyCheckboxIndicate, 
-                                            Path=Visibility,
-                                            Converter={StaticResource visibilityToBoolConverter}, 
-                                            ConverterParameter=True}">
-                            <rlb:ReorderListBox.ItemTemplate>
-                                <DataTemplate>
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="50" />
-                                        <ColumnDefinition Width="50" />
-                                    </Grid.ColumnDefinitions>
-                                    <TextBlock x:Name="Name" Text="{Binding ActivityRef.Name, Mode=TwoWay}" FontFamily="Portable User Interface" />
-                                    <TextBlock x:Name="Id" Text="{Binding ActivityRef.Id, Mode=TwoWay}" FontFamily="Portable User Interface" Visibility="Collapsed"/>
-                                    <Image Name="Img_close" Source="/Icon/Dark/close.png" Width="50" Grid.Column="1" Tap="Img_Tap" Visibility="{Binding ElementName=MyCheckboxIndicate, Path=Visibility}"/>
-                                    <Image Name="Img_play" Source="/Icon/Dark/transport.play.png" Width="50" Grid.Column="2" Tap="Img_Tap" Visibility="{Binding ElementName=MyCheckboxIndicate, Path=Visibility}"/>
-                                </Grid>
-                                </DataTemplate>
-                            </rlb:ReorderListBox.ItemTemplate>
-                        </rlb:ReorderListBox>
-                </StackPanel>
+             
             </phone:PivotItem>
 
             <!--Pivot item three-->
@@ -111,6 +36,8 @@
                 </StackPanel>
             </phone:PivotItem>-->
         </phone:Pivot>
+        <TextBlock x:Name="ahoj" HorizontalAlignment="Left" Margin="10,165,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,212,0,0" Click="Button_Click"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

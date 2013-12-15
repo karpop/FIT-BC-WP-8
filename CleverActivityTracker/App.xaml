@@ -9,10 +9,8 @@
 
     <!--Application Resources-->
     <Application.Resources>
+        
         <local:LocalizedStrings xmlns:local="clr-namespace:CleverActivityTracker" x:Key="LocalizedStrings"/>
-
-        <converters:BoolToVisibilityConverter x:Key="boolToVisibilityConverter" />
-        <converters:VisibilityToBoolConverter x:Key="visibilityToBoolConverter" />
         
         <shell:ApplicationBar x:Key="AppBar1" IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBar.MenuItems>

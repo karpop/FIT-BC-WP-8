@@ -61,23 +61,25 @@ namespace CleverActivityTracker
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
-            ViewModelDbSingleton.Instance.deleteDb();
-            ViewModelDbSingleton.Instance.createDb();
+            //ViewModelDbSingleton.Instance.CreateDbIfNotExits();
+            //ViewModelDbSingleton.Instance.ClearDb();
 
-            ViewModelDbSingleton.Instance.CreateActivity("Activita_1");
-            ViewModelDbSingleton.Instance.CreateActivity("Activita_2");
-            ViewModelDbSingleton.Instance.CreateActivity("Activita_3");
-            ViewModelDbSingleton.Instance.CreateActivity("Activita_4");
-            ViewModelDbSingleton.Instance.CreateActivity("Activita_5");
-            ViewModelDbSingleton.Instance.CreateActivity("Activita_6");
+            //ViewModelDbSingleton.Instance.createDb();
+
+            //ViewModelDbSingleton.Instance.CreateActivity("Activita_1");
+            //ViewModelDbSingleton.Instance.CreateActivity("Activita_2");
+            //ViewModelDbSingleton.Instance.CreateActivity("Activita_3");
+            //ViewModelDbSingleton.Instance.CreateActivity("Activita_4");
+            //ViewModelDbSingleton.Instance.CreateActivity("Activita_5");
+            //ViewModelDbSingleton.Instance.CreateActivity("Activita_6");
             //ViewModelDbSingleton.Instance.deleteActivity(1);
             //ViewModelDbSingleton.Instance.deleteActivity(2);
             //ViewModelDbSingleton.Instance.deleteActivity(3);
             //ViewModelDbSingleton.Instance.CreateFolder("slozka");
             //ViewModelDbSingleton.Instance.CreateActivity("slozka", ViewModelDbSingleton.Instance.findFolder(1));
-            ViewModelDbSingleton.Instance.CreateSchedule(ViewModelDbSingleton.Instance.findActivity(1));
-            ViewModelDbSingleton.Instance.CreateSchedule(ViewModelDbSingleton.Instance.findActivity(2));
-            ViewModelDbSingleton.Instance.CreateSchedule(ViewModelDbSingleton.Instance.findActivity(3));
+            //ViewModelDbSingleton.Instance.CreateSchedule(ViewModelDbSingleton.Instance.findActivity(1));
+            //ViewModelDbSingleton.Instance.CreateSchedule(ViewModelDbSingleton.Instance.findActivity(2));
+            //ViewModelDbSingleton.Instance.CreateSchedule(ViewModelDbSingleton.Instance.findActivity(3));
 
         }
 

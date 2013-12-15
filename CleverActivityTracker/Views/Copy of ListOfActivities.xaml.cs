@@ -8,17 +8,18 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using CleverActivityTracker.ViewModels;
+using System.Collections.ObjectModel;
 using CleverActivityTracker.Models;
 
 namespace CleverActivityTracker.Views
 {
-    public partial class PivotPage1 : PhoneApplicationPage
+    public partial class ListOfActivities : PhoneApplicationPage
     {
         ViewModelDbSingleton dbSingleton = ViewModelDbSingleton.Instance;
 
-        NotifyEnabled pok = new NotifyEnabled { IsEnable = false };
+        NotifyEnabled pok = new NotifyEnabled { IsEnable = true };
 
-        public PivotPage1()
+        public ListOfActivities()
         {
             InitializeComponent();
 

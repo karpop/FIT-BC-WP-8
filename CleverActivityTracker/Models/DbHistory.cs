@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CleverActivityTracker.Models 
+namespace CleverActivityTracker.Models
 {
+    /// <summary>
+    /// Trida pro zaznam tabulky historie aktivit
+    /// </summary>
     [Table]
-    public class Schedule : INotifyPropertyBase
+    public class History : INotifyPropertyBase
     {
-
+        /// <summary>
+        /// Primarni klic historie.
+        /// </summary>
         private int _id;
         [Column(IsPrimaryKey = true, IsDbGenerated = true, DbType = "INT NOT NULL IDENTITY", CanBeNull = false, AutoSync = AutoSync.OnInsert)]
         public int Id
@@ -20,22 +21,38 @@ namespace CleverActivityTracker.Models
             set { this.SetProperty(ref this._id, value); }
         }
 
-        private int? _order;
+        /// <summary>
+        /// Cas zacatku daneho zaznamu.
+        /// </summary>
+        private DateTime _from;
         [Column]
-        public int? Order
+        public DateTime From
         {
-            get { return _order; }
-            set { this.SetProperty(ref this._order, value); }
+            get { return _from; }
+            set { this.SetProperty(ref this._from, value); }
         }
 
-        // Internal column for the associated
+        /// <summary>
+        /// Cas konce daneho zaznamu.
+        /// </summary>
+        private DateTime _to;
+        [Column]
+        public DateTime To
+        {
+            get { return _to; }
+            set { this.SetProperty(ref this._to, value); }
+        }
+
+        /// <summary>
+        /// Cizi klic obsahujici id aktivity.
+        /// </summary>
         [Column]
         internal int? _activityId;
 
-        // Entity reference, to identify the ToDoCategory "storage" table
+        /// <summary>
+        /// Odkaz na aktivitu.
+        /// </summary>
         private EntityRef<Activity> _activityRef;
-
-        // Association, to describe the relationship between this key and that "storage" table
         [Association(Storage = "_activityRef", ThisKey = "_activityId", OtherKey = "Id", IsForeignKey = true)]
         public Activity ActivityRef
         {
@@ -45,10 +62,7 @@ namespace CleverActivityTracker.Models
                 OnPropertyChanging();
                 _activityRef.Entity = value;
                 if (value != null)
-                {
-                    value.SchedulesRef.Add(this);
                     _activityId = value.Id;
-                }
                 OnPropertyChanged();
             }
         }

@@ -28,24 +28,23 @@
                     <rlb:ReorderListBox 
                         x:Name="reorderListBox"
                         ItemsSource="{Binding}" 
-                        IsReorderEnabled="False">
-                        <!--IsReorderEnabled="{Binding 
+                        IsReorderEnabled="{Binding 
                                             ElementName=MyCheckboxIndicate, 
                                             Path=Visibility,
                                             Converter={StaticResource visibilityToBoolConverter}, 
-                                            ConverterParameter=True}">-->
+                                            ConverterParameter=True}"
+                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}">
                         <rlb:ReorderListBox.ItemTemplate>
                             <DataTemplate x:Name="reorderListBoxTemplate">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="1*" />
-                                        <ColumnDefinition Width="50" />
-                                        <ColumnDefinition Width="50" />
+                                        <ColumnDefinition Width="50" >
+                                        </ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <TextBlock x:Name="Name" Text="{Binding Name, Mode=TwoWay}" FontFamily="Portable User Interface" Tap="TextBlock_Tap"/>
                                     <TextBlock x:Name="Id" Text="{Binding Id, Mode=TwoWay}" FontFamily="Portable User Interface" Visibility="Collapsed"/>
-                                    <Image Name="Img_close" Source="/Icon/Dark/close.png" Width="50" Grid.Column="1" Tap="Img_Tap" Visibility="{Binding ElementName=MyCheckboxIndicate, Path=Visibility}"/>
-                                    <Image Name="Img_edit" Source="/Icon/Dark/edit.png" Width="50" Grid.Column="2" Tap="Img_Tap" Visibility="{Binding ElementName=MyCheckboxIndicate, Path=Visibility}"/>
+                                    <Image Name="Img_add" Source="/Icon/Dark/add.png" Width="50" Grid.Column="1" Tap="Img_add_Tap" Visibility="{Binding ElementName=MyCheckboxIndicate, Path=Visibility}"/>
                                 </Grid>
                             </DataTemplate>
                         </rlb:ReorderListBox.ItemTemplate>
@@ -65,7 +64,7 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Icon/Dark/add.png" Text="Button 1" Click="ApplicationBarIconButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Icon/Dark/edit.png" Text="Button 1" Click="ApplicationBarIconButton_Click"/>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="O aplikaci"/>
             </shell:ApplicationBar.MenuItems>

@@ -1,89 +1,89 @@
-﻿<xapCache source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Bin\Debug\CleverActivityTracker_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="29/11/2013 14:58:11">
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\obj\Debug\CleverActivityTracker.dll" archivePath="CleverActivityTracker.dll" lastWriteTime="29/11/2013 14:58:10" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\obj\Debug\cs-CZ\CleverActivityTracker.resources.dll" archivePath="cs-CZ\CleverActivityTracker.resources.dll" lastWriteTime="29/11/2013 14:58:10" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="21/11/2013 10:15:31" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="21/11/2013 10:15:31" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="21/11/2013 10:15:31" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="21/11/2013 10:15:31" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="21/11/2013 10:15:31" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\add.png" archivePath="Icon\Dark\add.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\back.png" archivePath="Icon\Dark\back.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\basecircle.png" archivePath="Icon\Dark\basecircle.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\cancel.png" archivePath="Icon\Dark\cancel.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\check.png" archivePath="Icon\Dark\check.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\close.png" archivePath="Icon\Dark\close.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\delete.png" archivePath="Icon\Dark\delete.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\download.png" archivePath="Icon\Dark\download.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\edit.png" archivePath="Icon\Dark\edit.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\favs.addto.png" archivePath="Icon\Dark\favs.addto.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\favs.png" archivePath="Icon\Dark\favs.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.alarm.png" archivePath="Icon\Dark\feature.alarm.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.calendar.png" archivePath="Icon\Dark\feature.calendar.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.camera.png" archivePath="Icon\Dark\feature.camera.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.email.png" archivePath="Icon\Dark\feature.email.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.phone.png" archivePath="Icon\Dark\feature.phone.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.search.png" archivePath="Icon\Dark\feature.search.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.settings.png" archivePath="Icon\Dark\feature.settings.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\feature.video.png" archivePath="Icon\Dark\feature.video.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\folder.png" archivePath="Icon\Dark\folder.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\like.png" archivePath="Icon\Dark\like.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\microphone.png" archivePath="Icon\Dark\microphone.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\minus.png" archivePath="Icon\Dark\minus.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\new.png" archivePath="Icon\Dark\new.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\next.png" archivePath="Icon\Dark\next.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\overflowdots.png" archivePath="Icon\Dark\overflowdots.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\questionmark.png" archivePath="Icon\Dark\questionmark.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\refresh.png" archivePath="Icon\Dark\refresh.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\save.png" archivePath="Icon\Dark\save.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\share.png" archivePath="Icon\Dark\share.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\stop.png" archivePath="Icon\Dark\stop.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\sync.png" archivePath="Icon\Dark\sync.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\transport.ff.png" archivePath="Icon\Dark\transport.ff.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\transport.pause.png" archivePath="Icon\Dark\transport.pause.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\transport.play.png" archivePath="Icon\Dark\transport.play.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\transport.rew.png" archivePath="Icon\Dark\transport.rew.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Dark\upload.png" archivePath="Icon\Dark\upload.png" lastWriteTime="21/11/2013 13:49:56" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\add.png" archivePath="Icon\Light\add.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\back.png" archivePath="Icon\Light\back.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\basecircle.png" archivePath="Icon\Light\basecircle.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\cancel.png" archivePath="Icon\Light\cancel.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\check.png" archivePath="Icon\Light\check.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\close.png" archivePath="Icon\Light\close.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\delete.png" archivePath="Icon\Light\delete.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\download.png" archivePath="Icon\Light\download.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\edit.png" archivePath="Icon\Light\edit.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\favs.addto.png" archivePath="Icon\Light\favs.addto.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\favs.png" archivePath="Icon\Light\favs.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.alarm.png" archivePath="Icon\Light\feature.alarm.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.calendar.png" archivePath="Icon\Light\feature.calendar.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.camera.png" archivePath="Icon\Light\feature.camera.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.email.png" archivePath="Icon\Light\feature.email.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.phone.png" archivePath="Icon\Light\feature.phone.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.search.png" archivePath="Icon\Light\feature.search.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.settings.png" archivePath="Icon\Light\feature.settings.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\feature.video.png" archivePath="Icon\Light\feature.video.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\folder.png" archivePath="Icon\Light\folder.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\like.png" archivePath="Icon\Light\like.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\microphone.png" archivePath="Icon\Light\microphone.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\minus.png" archivePath="Icon\Light\minus.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\new.png" archivePath="Icon\Light\new.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\next.png" archivePath="Icon\Light\next.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\overflowdots.png" archivePath="Icon\Light\overflowdots.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\questionmark.png" archivePath="Icon\Light\questionmark.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\refresh.png" archivePath="Icon\Light\refresh.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\save.png" archivePath="Icon\Light\save.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\share.png" archivePath="Icon\Light\share.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\stop.png" archivePath="Icon\Light\stop.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\sync.png" archivePath="Icon\Light\sync.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\transport.ff.png" archivePath="Icon\Light\transport.ff.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\transport.pause.png" archivePath="Icon\Light\transport.pause.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\transport.play.png" archivePath="Icon\Light\transport.play.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\transport.rew.png" archivePath="Icon\Light\transport.rew.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Icon\Light\upload.png" archivePath="Icon\Light\upload.png" lastWriteTime="21/11/2013 13:50:40" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="29/11/2013 14:31:38" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/11/2013 10:15:31" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="21/11/2013 10:15:31" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="03/03/2013 18:40:38" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\packages\ReorderListBox.1.2.0.0\lib\wp80\ReorderListBox.dll" archivePath="ReorderListBox.dll" lastWriteTime="28/11/2013 15:48:58" />
-  <file source="C:\Users\Karel\Documents\Visual Studio 2012\Projects\CleverActivityTracker\CleverActivityTracker\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="29/11/2013 14:31:38" />
+﻿<xapCache source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Bin\Debug\CleverActivityTracker_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="15/12/2013 11:23:31">
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\obj\Debug\CleverActivityTracker.dll" archivePath="CleverActivityTracker.dll" lastWriteTime="15/12/2013 11:23:30" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\obj\Debug\cs-CZ\CleverActivityTracker.resources.dll" archivePath="cs-CZ\CleverActivityTracker.resources.dll" lastWriteTime="15/12/2013 11:23:30" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="21/11/2013 10:15:31" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="21/11/2013 10:15:31" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="21/11/2013 10:15:31" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="21/11/2013 10:15:31" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="21/11/2013 10:15:31" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\add.png" archivePath="Icon\Dark\add.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\back.png" archivePath="Icon\Dark\back.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\basecircle.png" archivePath="Icon\Dark\basecircle.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\cancel.png" archivePath="Icon\Dark\cancel.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\check.png" archivePath="Icon\Dark\check.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\close.png" archivePath="Icon\Dark\close.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\delete.png" archivePath="Icon\Dark\delete.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\download.png" archivePath="Icon\Dark\download.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\edit.png" archivePath="Icon\Dark\edit.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\favs.addto.png" archivePath="Icon\Dark\favs.addto.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\favs.png" archivePath="Icon\Dark\favs.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.alarm.png" archivePath="Icon\Dark\feature.alarm.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.calendar.png" archivePath="Icon\Dark\feature.calendar.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.camera.png" archivePath="Icon\Dark\feature.camera.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.email.png" archivePath="Icon\Dark\feature.email.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.phone.png" archivePath="Icon\Dark\feature.phone.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.search.png" archivePath="Icon\Dark\feature.search.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.settings.png" archivePath="Icon\Dark\feature.settings.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\feature.video.png" archivePath="Icon\Dark\feature.video.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\folder.png" archivePath="Icon\Dark\folder.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\like.png" archivePath="Icon\Dark\like.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\microphone.png" archivePath="Icon\Dark\microphone.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\minus.png" archivePath="Icon\Dark\minus.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\new.png" archivePath="Icon\Dark\new.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\next.png" archivePath="Icon\Dark\next.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\overflowdots.png" archivePath="Icon\Dark\overflowdots.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\questionmark.png" archivePath="Icon\Dark\questionmark.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\refresh.png" archivePath="Icon\Dark\refresh.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\save.png" archivePath="Icon\Dark\save.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\share.png" archivePath="Icon\Dark\share.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\stop.png" archivePath="Icon\Dark\stop.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\sync.png" archivePath="Icon\Dark\sync.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\transport.ff.png" archivePath="Icon\Dark\transport.ff.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\transport.pause.png" archivePath="Icon\Dark\transport.pause.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\transport.play.png" archivePath="Icon\Dark\transport.play.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\transport.rew.png" archivePath="Icon\Dark\transport.rew.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Dark\upload.png" archivePath="Icon\Dark\upload.png" lastWriteTime="21/11/2013 13:49:56" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\add.png" archivePath="Icon\Light\add.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\back.png" archivePath="Icon\Light\back.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\basecircle.png" archivePath="Icon\Light\basecircle.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\cancel.png" archivePath="Icon\Light\cancel.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\check.png" archivePath="Icon\Light\check.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\close.png" archivePath="Icon\Light\close.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\delete.png" archivePath="Icon\Light\delete.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\download.png" archivePath="Icon\Light\download.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\edit.png" archivePath="Icon\Light\edit.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\favs.addto.png" archivePath="Icon\Light\favs.addto.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\favs.png" archivePath="Icon\Light\favs.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.alarm.png" archivePath="Icon\Light\feature.alarm.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.calendar.png" archivePath="Icon\Light\feature.calendar.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.camera.png" archivePath="Icon\Light\feature.camera.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.email.png" archivePath="Icon\Light\feature.email.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.phone.png" archivePath="Icon\Light\feature.phone.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.search.png" archivePath="Icon\Light\feature.search.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.settings.png" archivePath="Icon\Light\feature.settings.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\feature.video.png" archivePath="Icon\Light\feature.video.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\folder.png" archivePath="Icon\Light\folder.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\like.png" archivePath="Icon\Light\like.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\microphone.png" archivePath="Icon\Light\microphone.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\minus.png" archivePath="Icon\Light\minus.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\new.png" archivePath="Icon\Light\new.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\next.png" archivePath="Icon\Light\next.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\overflowdots.png" archivePath="Icon\Light\overflowdots.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\questionmark.png" archivePath="Icon\Light\questionmark.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\refresh.png" archivePath="Icon\Light\refresh.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\save.png" archivePath="Icon\Light\save.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\share.png" archivePath="Icon\Light\share.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\stop.png" archivePath="Icon\Light\stop.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\sync.png" archivePath="Icon\Light\sync.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\transport.ff.png" archivePath="Icon\Light\transport.ff.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\transport.pause.png" archivePath="Icon\Light\transport.pause.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\transport.play.png" archivePath="Icon\Light\transport.play.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\transport.rew.png" archivePath="Icon\Light\transport.rew.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Icon\Light\upload.png" archivePath="Icon\Light\upload.png" lastWriteTime="21/11/2013 13:50:40" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="15/12/2013 11:23:31" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/11/2013 10:15:31" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="21/11/2013 10:15:31" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 18:57:00" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\packages\ReorderListBox.1.2.0.0\lib\wp80\ReorderListBox.dll" archivePath="ReorderListBox.dll" lastWriteTime="28/11/2013 15:48:58" />
+  <file source="C:\Users\Karel\Desktop\pokusyDB\CleverActivityTracker\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="15/12/2013 11:23:31" />
 </xapCache>
