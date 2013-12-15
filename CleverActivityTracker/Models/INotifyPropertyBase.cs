@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-
 namespace CleverActivityTracker.Models
 {
     public abstract class INotifyPropertyBase : INotifyPropertyChanged, INotifyPropertyChanging

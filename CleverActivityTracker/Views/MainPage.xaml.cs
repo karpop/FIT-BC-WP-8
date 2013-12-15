@@ -21,6 +21,8 @@ namespace CleverActivityTracker.Views
         public MainPage()
         {
             InitializeComponent();
+            //ApplicationBar = ((ApplicationBar)Application.Current.Resources["AppBar1"]);
+            ApplicationBar = ((ApplicationBar)this.Resources["AppBar"]);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
