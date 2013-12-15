@@ -109,6 +109,9 @@
     </Compile>
     <Compile Include="ViewModels\Converters.cs" />
     <Compile Include="ViewModels\DbSingleton.cs" />
+    <Compile Include="Views\EditOrNewActivity.xaml.cs">
+      <DependentUpon>EditOrNewActivity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -219,6 +222,11 @@
     <Content Include="Icon\Light\transport.play.png" />
     <Content Include="Icon\Light\transport.rew.png" />
     <Content Include="Icon\Light\upload.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.cs-CZ.resx" />
@@ -228,6 +236,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\EditOrNewActivity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -235,6 +247,9 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="ReorderListBox">
       <HintPath>..\packages\ReorderListBox.1.2.0.0\lib\wp80\ReorderListBox.dll</HintPath>
     </Reference>

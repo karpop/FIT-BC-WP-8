@@ -22,13 +22,16 @@ namespace CleverActivityTracker.Views
         {
             InitializeComponent();
             //ApplicationBar = ((ApplicationBar)Application.Current.Resources["AppBar1"]);
-            ApplicationBar = ((ApplicationBar)this.Resources["AppBar"]);
+            //ApplicationBar = ((ApplicationBar)this.Resources["AppBar"]);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //singl.AllFolderItems[1].ActivitiesRef.Add(singl.AllActivityItems[0]);
-            //ahoj.Text = singl.AllActivityGroupItems[0].ActivityRef.Name;
+            NavigationService.Navigate(new Uri("/Views/EditOrNewActivity.xaml",  UriKind.Relative));
+        }
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/EditOrNewActivity.xaml?activityId=1", UriKind.Relative));
         }
     }
 }

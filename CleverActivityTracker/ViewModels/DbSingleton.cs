@@ -63,6 +63,17 @@ namespace CleverActivityTracker.ViewModels
 
         public ViewModelDbSingleton() 
         {
+            //if (!db.DatabaseExists()) { db.CreateDatabase(); }
+            //AllActivityItems = new ObservableCollection<Activity>(db.Activities);
+            //AllFolderItems = new ObservableCollection<Folder>(db.Folders);
+            //AllScheduleItems = new ObservableCollection<Schedule>(db.Schedules.OrderBy(x => x.Order));
+            //AllGroupItems = new ObservableCollection<Group>(db.Group);
+            //AllHistoryItems = new ObservableCollection<History>(db.History);
+            //AllActivityGroupItems = new ObservableCollection<ActivityGroup>(db.ActivityGroup);
+        }
+
+        public void CreateDbIfNotxitsAndInit()
+        {
             if (!db.DatabaseExists()) { db.CreateDatabase(); }
             AllActivityItems = new ObservableCollection<Activity>(db.Activities);
             AllFolderItems = new ObservableCollection<Folder>(db.Folders);
@@ -70,6 +81,11 @@ namespace CleverActivityTracker.ViewModels
             AllGroupItems = new ObservableCollection<Group>(db.Group);
             AllHistoryItems = new ObservableCollection<History>(db.History);
             AllActivityGroupItems = new ObservableCollection<ActivityGroup>(db.ActivityGroup);
+        }
+
+        public void DeleteDb()
+        {
+            db.DeleteDatabase();
         }
 
         ~ViewModelDbSingleton()

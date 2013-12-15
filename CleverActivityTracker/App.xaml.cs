@@ -36,6 +36,8 @@ namespace CleverActivityTracker
             // Language display initialization
             InitializeLanguage();
 
+            ViewModelDbSingleton.Instance.DeleteDb();
+            ViewModelDbSingleton.Instance.CreateDbIfNotxitsAndInit();
             // Show graphics profiling information while debugging.
             if (Debugger.IsAttached)
             {

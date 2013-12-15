@@ -12,6 +12,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     shell:SystemTray.IsVisible="True">
     
     <phone:PhoneApplicationPage.Resources>
@@ -41,8 +42,25 @@
             <!--Pivot item one-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPage_PivotItem1Title, Source={StaticResource LocalizedStrings}}">
                 <StackPanel>
+                    <toolkit:ExpanderView x:Name="pokus" Header="Hlavicka" FontSize="20">
+                        <toolkit:ExpanderView.Expander>
+                            <TextBlock Text="expander" FontSize="20"/>
+                        </toolkit:ExpanderView.Expander>
+                        <toolkit:ExpanderView.Items>
+                            <TextBlock Text="Jedna" FontSize="20"/>
+                            <TextBlock Text="Dva" FontSize="20"/>
+                            <TextBlock Text="Tri" FontSize="20"/>
+                            <toolkit:ExpanderView x:Name="pokus2" Header="Ctyry" FontSize="20">
+                                <toolkit:ExpanderView.Items>
+                                    <TextBlock Text="Jedna" FontSize="20"/>
+                                    <TextBlock Text="Dva" FontSize="20" />
+                                </toolkit:ExpanderView.Items>
+                            </toolkit:ExpanderView>
+                        </toolkit:ExpanderView.Items>
+                    </toolkit:ExpanderView>
                     <TextBlock Text="TEXT" x:Name="ahoj" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
                     <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0" Click="Button_Click"/>
+                    <Button Content="Button2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0" Click="Button_Click2"/>
                 </StackPanel>
             </phone:PivotItem>
 

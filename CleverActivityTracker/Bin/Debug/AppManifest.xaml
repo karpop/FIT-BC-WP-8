@@ -2,7 +2,9 @@
   <Deployment.Parts>
     <AssemblyPart x:Name="CleverActivityTracker" Source="CleverActivityTracker.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
     <AssemblyPart x:Name="ReorderListBox" Source="ReorderListBox.dll" />
     <AssemblyPart Source="cs-CZ/CleverActivityTracker.resources.dll" />
+    <AssemblyPart Source="cs-CZ/Microsoft.Phone.Controls.Toolkit.resources.dll" />
   </Deployment.Parts>
 </Deployment>
