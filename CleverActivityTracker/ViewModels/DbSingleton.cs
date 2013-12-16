@@ -88,12 +88,6 @@ namespace CleverActivityTracker.ViewModels
             db.DeleteDatabase();
         }
 
-        ~ViewModelDbSingleton()
-        {
-            SaveOrderSchedule();
-            db.SubmitChanges();
-        }
-
         public void ClearDb() 
         {
             foreach (Group group in db.Group) { DeleteGroup(group); }
@@ -126,7 +120,8 @@ namespace CleverActivityTracker.ViewModels
         public void SaveOrderSchedule()
         {
             int i = 1;
-            foreach (Schedule schedule in AllScheduleItems) { schedule.Order = i++; };
+            foreach (Schedule schedule in AllScheduleItems) { schedule.Order = i++; }
+            db.SubmitChanges();
         }
 
         public Schedule FindSchedule(int id)
@@ -215,9 +210,9 @@ namespace CleverActivityTracker.ViewModels
             db.SubmitChanges();
         }
 
-        public void CreateHistory(Activity activity)
+        public void CreateHistory(Activity activity, DateTime from, DateTime to)
         {
-            History history = new History();
+            History history = new History { From = from, To = to };
             activity.HistoriesRef.Add(history);
             db.History.InsertOnSubmit(history);
             db.SubmitChanges();
@@ -231,5 +226,27 @@ namespace CleverActivityTracker.ViewModels
             db.History.DeleteOnSubmit(history);
             db.SubmitChanges();
         }
+
+        private DateTime runningFrom;
+        private Activity runningActivity = null;
+
+        public void RunActivity(Activity activity)
+        {
+            runningFrom = DateTime.Now;
+            runningActivity = activity;
+        }
+
+        public bool IsRunningActivity()
+        {
+            return runningActivity != null ? true : false;
+        }
+
+        public void StopActivity()
+        {
+            if (runningActivity != null)
+                CreateHistory(runningActivity, runningFrom, DateTime.Now);
+            runningActivity = null;
+        }
+
     }
 }

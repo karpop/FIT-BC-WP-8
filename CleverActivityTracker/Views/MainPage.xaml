@@ -17,28 +17,36 @@
     
     <phone:PhoneApplicationPage.Resources>
         
-        <shell:ApplicationBar x:Key="AppBar1" IsVisible="True" IsMenuEnabled="True">
+        <shell:ApplicationBar x:Key="AppBarTracking" IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="Manage activities" />
                 <shell:ApplicationBarMenuItem Text="O aplikaci" />
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
 
-        <shell:ApplicationBar x:Key="AppBar2" IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Icon/Dark/edit.png" Text="edit" />
-            <shell:ApplicationBarIconButton IconUri="/Icon/Dark/add.png" Text="add" />
+        <shell:ApplicationBar x:Key="AppBarSchedule" IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Icon/Dark/add.png" Text="add" Click="ApplicationBarIconButton_Add"/>
+            <shell:ApplicationBarIconButton IconUri="/Icon/Dark/edit.png" Text="edit" Click="ApplicationBarIconButton_Edit"/>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="Manage activities" />
                 <shell:ApplicationBarMenuItem Text="O aplikaci" />
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
-        
+
+
+        <shell:ApplicationBar x:Key="AppBarHistory" IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Manage activities" />
+                <shell:ApplicationBarMenuItem Text="O aplikaci" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+
     </phone:PhoneApplicationPage.Resources>
     
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" >
+        <phone:Pivot Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" SelectionChanged="PivotItem_SelectionChanged" >
             <!--Pivot item one-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPage_PivotItem1Title, Source={StaticResource LocalizedStrings}}">
                 <StackPanel>
@@ -59,19 +67,67 @@
                         </toolkit:ExpanderView.Items>
                     </toolkit:ExpanderView>
                     <TextBlock Text="TEXT" x:Name="ahoj" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
-                    <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0" Click="Button_Click"/>
-                    <Button Content="Button2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0" Click="Button_Click2"/>
                 </StackPanel>
             </phone:PivotItem>
 
             <!--Pivot item two-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPage_PivotItem2Title, Source={StaticResource LocalizedStrings}}">
-             
+                <rlb:ReorderListBox 
+                        x:Name="listBox_AllScheduleItems"
+                        ItemsSource="{Binding AllScheduleItems}" 
+                        IsReorderEnabled="{Binding ScheduleEditEnabled}" ManipulationCompleted="listBox_AllScheduleItems_ManipulationCompleted"
+                    >
+                    <rlb:ReorderListBox.ItemTemplate>
+                        <DataTemplate >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="60" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="60" />
+                                  
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="Name" Text="{Binding ActivityRef.Name, Mode=OneWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,0,0,0" />
+
+                                <Image Visibility="{Binding ElementName=listBox_AllScheduleItems, Path=DataContext.ScheduleEditEnabled, Converter={StaticResource boolToVisibilityConverter}, ConverterParameter=True}"
+                                        Name="Img_Add" Source="/Icon/pokusy/Play.png" Tap="Schedule_Img_Play_Tap" Width="50" Height="50" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Image Visibility="{Binding ElementName=listBox_AllScheduleItems, Path=DataContext.ScheduleEditEnabled, Converter={StaticResource boolToVisibilityConverter}}"
+                                        Name="Img_Delete" Source="/Icon/pokusy/Delete.png" Tap="Schedule_Img_Delete_Tap"  Width="45" Height="45" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </rlb:ReorderListBox.ItemTemplate>
+                </rlb:ReorderListBox>
             </phone:PivotItem>
 
             <!--Pivot item three-->
             <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPage_PivotItem3Title, Source={StaticResource LocalizedStrings}}">
-              
+                <rlb:ReorderListBox 
+                        x:Name="listBox_AllHistoryItems"
+                        ItemsSource="{Binding AllHistoryItems}" 
+                        IsReorderEnabled="False"
+                    >
+                    <rlb:ReorderListBox.ItemTemplate>
+                        <DataTemplate >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="60" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="60" />
+
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="Name" Text="{Binding ActivityRef.Name, Mode=OneWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,0,0,0" />
+
+                                <Image Visibility="{Binding ElementName=listBox_AllHistoryItems, Path=DataContext.HistoryEditEnabled, Converter={StaticResource boolToVisibilityConverter}, ConverterParameter=True}"
+                                        Name="Img_Add" Source="/Icon/pokusy/Play.png" Tap="Schedule_Img_Play_Tap" Width="50" Height="50" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Image Visibility="{Binding ElementName=listBox_AllHistoryItems, Path=DataContext.HistoryEditEnabled, Converter={StaticResource boolToVisibilityConverter}}"
+                                        Name="Img_Delete" Source="/Icon/pokusy/Delete.png" Tap="Schedule_Img_Delete_Tap"  Width="45" Height="45" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </rlb:ReorderListBox.ItemTemplate>
+                </rlb:ReorderListBox>
             </phone:PivotItem>
         </phone:Pivot>
      </Grid>

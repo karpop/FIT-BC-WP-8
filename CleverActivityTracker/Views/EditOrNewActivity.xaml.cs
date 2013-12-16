@@ -20,18 +20,18 @@ namespace CleverActivityTracker.Views
         public EditOrNewActivity()
         {
             InitializeComponent();
-
+            model.EnableEdit = false;
             DataContext = model;
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            string strId;
-            if (NavigationContext.QueryString.TryGetValue("activityId", out strId))
+            string str;
+            if (NavigationContext.QueryString.TryGetValue("activityId", out str))
             {
                 model.EnableEdit = false;
-                model.idActivity = Convert.ToInt32(strId);
+                model.idActivity = Convert.ToInt32(str);
                 model.Activity = db.FindActivity((int)model.idActivity);
             }
             else
@@ -81,14 +81,14 @@ namespace CleverActivityTracker.Views
             public Activity Activity
             {
                 get { return _activity; }
-                set { this.SetProperty(ref this._activity, value); }
+                set { this.SetPropertyChanged(ref this._activity, value); }
             }
 
             private bool _enableEdit;
             public bool EnableEdit
             {
                 get { return _enableEdit; }
-                set { this.SetProperty(ref this._enableEdit, value); }
+                set { this.SetPropertyChanged(ref this._enableEdit, value); }
             }
         }
     }

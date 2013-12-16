@@ -45,4 +45,32 @@ namespace CleverActivityTracker.ViewModels
             return null;
         }
     }
+
+    public class BoolToGridWidth : IValueConverter
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="targetType"></param>
+        /// <param name="parameter">Urcuje sirku sloupce</param>
+        /// <param name="culture"></param>
+        /// <returns></returns>
+        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            bool boolValue = (bool)value;
+            Double doubleParameter = parameter != null ? Double.Parse(parameter as string) : 0.0;
+
+
+            if (boolValue)
+                return new GridLength(doubleParameter);
+            else
+                return new GridLength(0);
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            return null;
+        }
+    }
 }

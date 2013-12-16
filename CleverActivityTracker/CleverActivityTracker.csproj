@@ -112,6 +112,9 @@
     <Compile Include="Views\EditOrNewActivity.xaml.cs">
       <DependentUpon>EditOrNewActivity.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ListOfActivities.xaml.cs">
+      <DependentUpon>ListOfActivities.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -222,6 +225,10 @@
     <Content Include="Icon\Light\transport.play.png" />
     <Content Include="Icon\Light\transport.rew.png" />
     <Content Include="Icon\Light\upload.png" />
+    <Content Include="Icon\pokusy\Add.png" />
+    <Content Include="Icon\pokusy\Data-Edit.png" />
+    <Content Include="Icon\pokusy\Delete.png" />
+    <Content Include="Icon\pokusy\Play.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
@@ -237,6 +244,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\EditOrNewActivity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListOfActivities.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
