@@ -228,7 +228,9 @@
     <Content Include="Icon\pokusy\Add.png" />
     <Content Include="Icon\pokusy\Data-Edit.png" />
     <Content Include="Icon\pokusy\Delete.png" />
+    <Content Include="Icon\pokusy\Pause.png" />
     <Content Include="Icon\pokusy\Play.png" />
+    <Content Include="Icon\pokusy\Stop.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />

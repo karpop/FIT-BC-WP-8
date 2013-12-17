@@ -24,14 +24,26 @@ namespace CleverActivityTracker.Views
             InitializeComponent();
 
             model.ScheduleEditEnabled = false;
+            model.IsRunningActivity = false;
 
             model.AllScheduleItems = db.AllScheduleItems;
             model.AllHistoryItems = db.AllHistoryItems;
 
             DataContext = model;
 
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += OnTimerTick;
+            timer.Start();
+
             //ApplicationBar = ((ApplicationBar)Application.Current.Resources["AppBar1"]);
             //ApplicationBar = ((ApplicationBar)this.Resources["AppBar"]);
+        }
+
+        DispatcherTimer timer = new DispatcherTimer();
+        void OnTimerTick(Object sender, EventArgs args)
+        {
+            if (db.runningActivity != null)
+                activityTime.Text = (DateTime.Now - db.runningFrom).ToString(@"hh\:mm\:ss");
         }
 
         private void PivotItem_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -56,6 +68,13 @@ namespace CleverActivityTracker.Views
 
         private class PageModel : INotifyPropertyBase
         {
+            private bool _isRunningActivity;
+            public bool IsRunningActivity
+            {
+                get { return _isRunningActivity; }
+                set { SetPropertyChanged(ref _isRunningActivity, value); }
+            }
+
             private bool _scheduleEditEnabled;
             public bool ScheduleEditEnabled
             {
@@ -83,6 +102,8 @@ namespace CleverActivityTracker.Views
                 get { return _allHistoryItems; }
                 set { this.SetPropertyChanged(ref _allHistoryItems, value); }
             }
+
+
         }
 
         private void ApplicationBarIconButton_Add(object sender, EventArgs e)
@@ -100,10 +121,19 @@ namespace CleverActivityTracker.Views
 
         private void Schedule_Img_Play_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
+            mainPagePivot.SelectedIndex = 0;
             if (db.IsRunningActivity())
                 MessageBox.Show("It is not possible to run two activities at the same time.");
             else
+            {
+                model.IsRunningActivity = true;
                 db.RunActivity((((sender as Image).Parent as Grid).DataContext as Schedule).ActivityRef);
+                db.deleteSchedule((((sender as Image).Parent as Grid).DataContext as Schedule));
+                activityName.Text = db.runningActivity.Name;
+            }
+                
+
+            mainPagePivot.SelectedIndex = 0;
         }
 
         private void Schedule_Img_Delete_Tap(object sender, System.Windows.Input.GestureEventArgs e)
@@ -114,6 +144,32 @@ namespace CleverActivityTracker.Views
         private void listBox_AllScheduleItems_ManipulationCompleted(object sender, System.Windows.Input.ManipulationCompletedEventArgs e)
         {
             db.SaveOrderSchedule();
+        }
+
+        private void Img_Main_Stop_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            db.StopActivity();
+            model.IsRunningActivity = false;
+            activityTime.Text = "00:00:00";
+        }
+
+        private void Img_Main_Play_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            db.RunActivity(db.runningActivity);
+            columDef.Width = new GridLength(60);
+            Img_Main_Stop.Visibility = System.Windows.Visibility.Visible;
+            Img_Main_Play.Visibility = System.Windows.Visibility.Collapsed;
+            timer.Start();
+        }
+
+        private void Img_Main_Pause_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            db.PauseActivity();
+            columDef.Width = new GridLength(0);
+            Img_Main_Stop.Visibility = System.Windows.Visibility.Collapsed;
+            Img_Main_Play.Visibility = System.Windows.Visibility.Visible;
+            timer.Stop();
+            activityTime.Text = "00:00:00";
         }
     }
 }

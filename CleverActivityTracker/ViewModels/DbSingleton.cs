@@ -74,13 +74,47 @@ namespace CleverActivityTracker.ViewModels
 
         public void CreateDbIfNotxitsAndInit()
         {
-            if (!db.DatabaseExists()) { db.CreateDatabase(); }
-            AllActivityItems = new ObservableCollection<Activity>(db.Activities);
-            AllFolderItems = new ObservableCollection<Folder>(db.Folders);
-            AllScheduleItems = new ObservableCollection<Schedule>(db.Schedules.OrderBy(x => x.Order));
-            AllGroupItems = new ObservableCollection<Group>(db.Group);
-            AllHistoryItems = new ObservableCollection<History>(db.History);
-            AllActivityGroupItems = new ObservableCollection<ActivityGroup>(db.ActivityGroup);
+            if (!db.DatabaseExists())
+            {
+                AllActivityItems = new ObservableCollection<Activity>();
+                AllFolderItems = new ObservableCollection<Folder>();
+                AllScheduleItems = new ObservableCollection<Schedule>();
+                AllGroupItems = new ObservableCollection<Group>();
+                AllHistoryItems = new ObservableCollection<History>();
+                AllActivityGroupItems = new ObservableCollection<ActivityGroup>();
+
+                db.CreateDatabase();
+                CreateActivity("Activity1");
+                CreateActivity("Activity2");
+                CreateActivity("Activity3");
+                CreateActivity("Activity4");
+                CreateActivity("Activity5");
+                CreateActivity("Activity6");
+                CreateActivity("Activity7");
+                CreateActivity("Activity8");
+                CreateActivity("Activity9");
+
+                CreateSchedule(AllActivityItems[0]);
+                CreateSchedule(AllActivityItems[1]);
+                CreateSchedule(AllActivityItems[2]);
+            }
+            else
+            {
+                AllActivityItems = new ObservableCollection<Activity>(db.Activities);
+                AllFolderItems = new ObservableCollection<Folder>(db.Folders);
+                AllScheduleItems = new ObservableCollection<Schedule>(db.Schedules.OrderBy(x => x.Order));
+                AllGroupItems = new ObservableCollection<Group>(db.Group);
+                AllHistoryItems = new ObservableCollection<History>(db.History);
+                AllActivityGroupItems = new ObservableCollection<ActivityGroup>(db.ActivityGroup);
+            }
+
+            //if (!db.DatabaseExists()) { db.CreateDatabase(); }
+            //AllActivityItems = new ObservableCollection<Activity>(db.Activities);
+            //AllFolderItems = new ObservableCollection<Folder>(db.Folders);
+            //AllScheduleItems = new ObservableCollection<Schedule>(db.Schedules.OrderBy(x => x.Order));
+            //AllGroupItems = new ObservableCollection<Group>(db.Group);
+            //AllHistoryItems = new ObservableCollection<History>(db.History);
+            //AllActivityGroupItems = new ObservableCollection<ActivityGroup>(db.ActivityGroup);
         }
 
         public void DeleteDb()
@@ -227,8 +261,8 @@ namespace CleverActivityTracker.ViewModels
             db.SubmitChanges();
         }
 
-        private DateTime runningFrom;
-        private Activity runningActivity = null;
+        public DateTime runningFrom;
+        public Activity runningActivity = null;
 
         public void RunActivity(Activity activity)
         {
@@ -246,6 +280,12 @@ namespace CleverActivityTracker.ViewModels
             if (runningActivity != null)
                 CreateHistory(runningActivity, runningFrom, DateTime.Now);
             runningActivity = null;
+        }
+
+        public void PauseActivity()
+        {
+            if (runningActivity != null)
+                CreateHistory(runningActivity, runningFrom, DateTime.Now);
         }
 
     }

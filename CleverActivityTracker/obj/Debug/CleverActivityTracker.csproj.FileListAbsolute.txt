@@ -128,4 +128,3 @@ C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\zh-CN\Micro
 C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\obj\Debug\Views\EditOrNewActivity.g.cs
 C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\obj\Debug\Views\ListOfActivities.g.cs
-C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\obj\Debug\CleverActivityTracker.csprojResolveAssemblyReference.cache
