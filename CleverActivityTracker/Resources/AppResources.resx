@@ -126,7 +126,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>Clever Activity Tracker</value>
+    <value>Chytrý organizér času</value>
   </data>
   <data name="AppBarButtonText" xml:space="preserve">
     <value>add</value>
@@ -135,21 +135,21 @@
     <value>Menu Item</value>
   </data>
   <data name="MainPage_PivotItem1Title" xml:space="preserve">
-    <value>Tracking</value>
+    <value>Činnost</value>
   </data>
   <data name="MainPage_PivotItem2Title" xml:space="preserve">
-    <value>Schedule</value>
+    <value>Plán</value>
   </data>
   <data name="MainPage_PivotItem3Title" xml:space="preserve">
-    <value>History</value>
+    <value>Historie</value>
   </data>
   <data name="ActivityTitle" xml:space="preserve">
-    <value>Activity</value>
+    <value>Aktivity</value>
   </data>
   <data name="Attribute_NameTitle" xml:space="preserve">
-    <value>Name</value>
+    <value>Jméno</value>
   </data>
   <data name="FolderTitle" xml:space="preserve">
-    <value>Folder</value>
+    <value>Složka</value>
   </data>
 </root>

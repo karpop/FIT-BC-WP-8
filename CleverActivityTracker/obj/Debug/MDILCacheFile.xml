@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\CleverActivityTracker_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="16/12/2013 11:38:36">
-  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\obj\Debug\CleverActivityTracker.dll" archivePath="CleverActivityTracker.dll" lastWriteTime="16/12/2013 11:38:35" />
-  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\obj\Debug\cs-CZ\CleverActivityTracker.resources.dll" archivePath="cs-CZ\CleverActivityTracker.resources.dll" lastWriteTime="16/12/2013 11:38:35" />
+﻿<xapCache source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\CleverActivityTracker_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="17/12/2013 12:04:49">
+  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\obj\Debug\CleverActivityTracker.dll" archivePath="CleverActivityTracker.dll" lastWriteTime="17/12/2013 12:04:48" />
+  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\obj\Debug\cs-CZ\CleverActivityTracker.resources.dll" archivePath="cs-CZ\CleverActivityTracker.resources.dll" lastWriteTime="17/12/2013 12:04:48" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\packages\WPtoolkit.4.2013.08.16\lib\wp8\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll" archivePath="cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll" lastWriteTime="15/12/2013 15:02:39" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="21/11/2013 10:15:31" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="21/11/2013 10:15:31" />
@@ -84,17 +84,19 @@
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Icon\pokusy\Add.png" archivePath="Icon\pokusy\Add.png" lastWriteTime="16/12/2013 10:24:18" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Icon\pokusy\Data-Edit.png" archivePath="Icon\pokusy\Data-Edit.png" lastWriteTime="15/12/2013 21:18:29" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Icon\pokusy\Delete.png" archivePath="Icon\pokusy\Delete.png" lastWriteTime="16/12/2013 10:21:37" />
+  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Icon\pokusy\Pause.png" archivePath="Icon\pokusy\Pause.png" lastWriteTime="17/12/2013 11:36:29" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Icon\pokusy\Play.png" archivePath="Icon\pokusy\Play.png" lastWriteTime="16/12/2013 11:01:21" />
+  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Icon\pokusy\Stop.png" archivePath="Icon\pokusy\Stop.png" lastWriteTime="17/12/2013 11:38:00" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="15/12/2013 15:02:40" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="15/12/2013 15:02:40" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="15/12/2013 15:02:40" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="15/12/2013 15:02:40" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="15/12/2013 15:02:40" />
-  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="16/12/2013 09:11:32" />
+  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="17/12/2013 10:53:31" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/11/2013 10:15:31" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="21/11/2013 10:15:31" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 18:57:00" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="15/12/2013 15:02:39" />
   <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\packages\ReorderListBox.1.2.0.0\lib\wp80\ReorderListBox.dll" archivePath="ReorderListBox.dll" lastWriteTime="28/11/2013 15:48:58" />
-  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="16/12/2013 09:11:32" />
+  <file source="C:\Users\Karel\Documents\FIT-BC-WP-8\CleverActivityTracker\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="17/12/2013 10:53:31" />
 </xapCache>

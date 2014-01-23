@@ -84,15 +84,15 @@ namespace CleverActivityTracker.ViewModels
                 AllActivityGroupItems = new ObservableCollection<ActivityGroup>();
 
                 db.CreateDatabase();
-                CreateActivity("Activity1");
-                CreateActivity("Activity2");
-                CreateActivity("Activity3");
-                CreateActivity("Activity4");
-                CreateActivity("Activity5");
-                CreateActivity("Activity6");
-                CreateActivity("Activity7");
-                CreateActivity("Activity8");
-                CreateActivity("Activity9");
+                CreateActivity("Aktivita 1");
+                CreateActivity("Aktivita 2");
+                CreateActivity("Aktivita 3");
+                CreateActivity("Aktivita 4");
+                CreateActivity("Aktivita 5");
+                CreateActivity("Aktivita 6");
+                CreateActivity("Aktivita 7");
+                CreateActivity("Aktivita 8");
+                CreateActivity("Aktivita 9");
 
                 CreateSchedule(AllActivityItems[0]);
                 CreateSchedule(AllActivityItems[1]);
